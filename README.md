@@ -30,7 +30,6 @@ title = "Hemingway2"
 theme = "hemingway2"
 copyright = "&copy; <a href=\"https://github.com/beli3ver\">Malte Kiefer</a> 2016"
 disqusShortname = "shortname"
-googleAnalytics = ""
 description = "Your personal description"
 keywords = ["keyword1", "keyword2"]
 
