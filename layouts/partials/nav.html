@@ -8,9 +8,18 @@
         <nav class="nav-item level is-mobile">
           {{ range .Site.Params.social }}
           <a class="level-item" href="{{ .url }}">
-            <span class="icon">
-              <i class="fa {{ .fa_icon }}"></i>
-            </span>
+              <svg
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-label="{{ .name }}"
+                >
+                  <use xlink:href="{{ .Site.BaseURL }}/img/social.map.svg#{{ .name }}"/>
+              </svg>
           </a>
           {{ end }}
         </nav>

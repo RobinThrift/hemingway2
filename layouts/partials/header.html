@@ -8,7 +8,6 @@
     <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
     <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     {{ $baseURL := .Site.BaseURL }}
     {{ with .Site.Params.highlight.style }}
     <link rel="stylesheet" href="{{ $baseURL }}/css/langs/{{ . }}.min.css">
@@ -16,3 +15,4 @@
     <link rel="stylesheet" href="{{ $baseURL }}/css/hjls.min.css" />
     {{ end }}
 </head>
+
