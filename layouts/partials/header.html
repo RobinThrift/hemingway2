@@ -7,12 +7,6 @@
     <meta content="{{ delimit .Keywords ", " }}" name="keywords">
     <meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
     <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
-    {{ $baseURL := .Site.BaseURL }}
-    {{ with .Site.Params.highlight.style }}
-    <link rel="stylesheet" href="{{ $baseURL }}/css/langs/{{ . }}.min.css">
-    {{ else }}
-    <link rel="stylesheet" href="{{ $baseURL }}/css/hjls.min.css" />
-    {{ end }}
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.min.css">
 </head>
 

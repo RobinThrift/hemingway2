@@ -3,9 +3,3 @@
     <p>{{ .Site.Copyright | safeHTML }}</p>
   </div>
 </section>
-{{ $baseURL := .Site.BaseURL }}
-<script src="{{ $baseURL }}/js/highlight.min.js"></script>
-{{ range .Site.Params.highlight.languages }}
-<script type="text/javascript" src="{{ $baseURL }}/js/langs/{{ . }}.min.js"></script>
-{{ end }}
-<script>hljs.initHighlightingOnLoad();</script>
